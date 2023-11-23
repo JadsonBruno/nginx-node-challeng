@@ -13,4 +13,4 @@ COPY . .
 
 EXPOSE 3000
 
-CMD ["dockerize", "-wait", "tcp://db:3306", "-timeout", "60s", "yarn", "start"]
+CMD ["dockerize", "-wait", "tcp://db:3306", "-timeout", "60s", "sh", "start.sh"]
